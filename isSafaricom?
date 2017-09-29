@@ -1,0 +1,18 @@
+public class IsSafNumber {
+    public static void main(String args[]) {
+        String number = "+254757286597";
+        
+        if(number.length() != 13) {
+            System.out.println("Invalid length");
+        } else {
+            switch(number.charAt(5)){
+                case '3': case '5': case '6': case '7': case '8': 
+                    System.out.println("Invalid");
+                    break;
+                default: 
+                    System.out.println("Success");
+            }
+        }
+        
+    }
+}
